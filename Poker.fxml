@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label fx:id="lblRank" layoutX="18.0" layoutY="14.0" prefHeight="38.0" prefWidth="274.0" text="Rank: Ace=1, Jack=11, Queen=12, King=13" />
+            <Label fx:id="lblSuit" layoutX="303.0" layoutY="25.0" prefHeight="17.0" prefWidth="318.0" text="Suit: Diamonds=D, Hearts=H, Clubs=C, Spades=S" />
+            <Label fx:id="lblCard1" layoutX="121.0" layoutY="68.0" text="Card #1:" />
+            <Label fx:id="lblCard2" layoutX="121.0" layoutY="108.0" text="Card #2:" />
+            <Label fx:id="lblCard3" layoutX="121.0" layoutY="143.0" text="Card #3:" />
+            <Label fx:id="lblCard4" layoutX="120.0" layoutY="180.0" text="Card #4:" />
+            <Label fx:id="lblCard5" layoutX="120.0" layoutY="214.0" text="Card #5:" />
+            <TextField fx:id="txtFieldCard1" layoutX="189.0" layoutY="63.0" prefHeight="27.0" prefWidth="69.0" />
+            <TextField fx:id="txtFieldCard2" layoutX="189.0" layoutY="103.0" prefHeight="27.0" prefWidth="69.0" />
+            <TextField fx:id="txtFieldCard3" layoutX="189.0" layoutY="138.0" prefHeight="27.0" prefWidth="69.0" />
+            <TextField fx:id="txtFieldCard4" layoutX="189.0" layoutY="175.0" prefHeight="27.0" prefWidth="69.0" />
+            <TextField fx:id="txtFieldCard5" layoutX="189.0" layoutY="209.0" prefHeight="27.0" prefWidth="69.0" />
+            <TextField fx:id="txtFieldSuit1" layoutX="344.0" layoutY="63.0" prefHeight="27.0" prefWidth="54.0" />
+            <TextField fx:id="txtFieldSuit2" layoutX="344.0" layoutY="103.0" prefHeight="27.0" prefWidth="54.0" />
+            <TextField fx:id="txtFieldSuit3" layoutX="344.0" layoutY="138.0" prefHeight="27.0" prefWidth="54.0" />
+            <TextField fx:id="txtFieldSuit4" layoutX="344.0" layoutY="172.0" prefHeight="27.0" prefWidth="54.0" />
+            <TextField fx:id="txtFieldSuit5" layoutX="344.0" layoutY="209.0" prefHeight="27.0" prefWidth="54.0" />
+            <Button fx:id="btnHandType" layoutX="127.0" layoutY="248.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="274.0" text="Display Type of Hand " />
+            <Label fx:id="lblResult" layoutX="127.0" layoutY="295.0" prefHeight="17.0" prefWidth="274.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
